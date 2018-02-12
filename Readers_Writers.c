@@ -72,8 +72,8 @@ void * writers(void *arg)
 
 
     printf("Enter the text to be appended:");
-    //scanf("%[^\n]s",text);
-    scanf("%s",text);
+    scanf(" %[^\n]s",text);
+    //scanf("%s",text);
     fp = fopen("file.txt","a+");
     if (fp == NULL)
     {
