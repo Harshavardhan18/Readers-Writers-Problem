@@ -32,3 +32,7 @@ while(TRUE) {
           signal(w);
    signal(m);  // release lock
 } 
+
+To Compile: gcc -pthread `pkg-config --cflags gtk+-3.0` -o Readers_Writers Readers_Writers.c `pkg-config --libs gtk+-3.0`
+
+To Execute: ./Readers_Writers
